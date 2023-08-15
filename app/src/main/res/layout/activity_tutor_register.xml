@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorRegister"
+    android:background="@drawable/back">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tutor_register"
+            android:text="Registration For Tutor"
+            android:textSize="23dp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_reg_tutor"
+            android:layout_below="@+id/tutor_register"
+            android:hint="Username"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="#70ffffff"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_tutor"
+            android:layout_below="@+id/username_reg_tutor"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="#70ffffff"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_tutor"
+            android:layout_below="@+id/email_tutor"
+            android:hint="Phone Number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="#70ffffff"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+            android:drawablePadding="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tutor_district"
+            android:layout_below="@+id/mobile_tutor"
+            android:hint="District"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="#70ffffff"
+            android:drawableLeft="@drawable/ic_baseline_add_location_24"
+            android:drawablePadding="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tutor_subject"
+            android:layout_below="@+id/tutor_district"
+            android:hint="Interested Subject for Tutoring"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="#70ffffff"
+            android:drawableLeft="@drawable/ic_baseline_subject_24"
+            android:drawablePadding="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_tutor"
+            android:layout_below="@+id/tutor_subject"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:background="#70ffffff"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/repassword_tutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_tutor"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#70ffffff"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:drawablePadding="10dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+        <Button
+            android:id="@+id/tutor_registerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="register"
+            android:layout_below="@id/repassword_tutor"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
